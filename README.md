@@ -21,7 +21,7 @@ This analysis performs an in-depth **Exploratory Data Analysis (EDA)** on the IP
 The insights gained from this EDA help to better understand IPL match dynamics, player and team performances, and how certain factors, like batting order or toss wins, might influence the outcome of games.
 
 
-# Code: 
+# Code  
 ```python
 # Add important Library
 import pandas as pd  # Import pandas library for data manipulation
