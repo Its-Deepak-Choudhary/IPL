@@ -42,7 +42,7 @@ The analysis outputs multiple visualizations, including:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/ipl-eda.git
+   git clone https://github.com/your-username/ipl-eda.git](https://github.com/Its-Deepak-Choudhary/IPL.git
    ```
 
 2. **Install Dependencies**:
@@ -54,16 +54,46 @@ The analysis outputs multiple visualizations, including:
    pip install pandas matplotlib seaborn numpy
    ```
 
-3. **Run the Script**:
+3. ### **Run the Jupyter Notebook:**
 
-   * Place the IPL dataset (`matches.csv`) in the same directory as the Python script.
-   * Run the script to see the EDA and visualizations:
+  1. **Place the IPL dataset (`matches.csv`) in the same directory as the Jupyter notebook (`matches.ipynb`).**
+
+  2. **Install necessary libraries** (if not already installed):
+
+   Open a terminal or command prompt and run:
 
    ```bash
-   python ipl_eda.py
+   pip install pandas matplotlib seaborn numpy
    ```
 
----
+3. **Launch Jupyter Notebook**:
 
-Let me know if you need to modify or add anything specific to this!
+   In your terminal or command prompt, navigate to the directory where your `matches.ipynb` file is located:
+
+   ```bash
+   cd /path/to/your/folder
+   ```
+
+   Then, launch Jupyter Notebook with the following command:
+
+   ```bash
+   jupyter notebook
+   ```
+
+4. **Open the `matches.ipynb` file**:
+
+   After Jupyter Notebook opens in your browser, click on the `matches.ipynb` file to open it.
+
+5. **Run the Cells**:
+
+   * Click on a code cell and press `Shift + Enter` to run it.
+   * Alternatively, you can run all cells at once by clicking **Run > Run All Cells** in the Jupyter toolbar.
+
+### **Note:**
+
+* Ensure the file `matches.csv` is in the same folder as your notebook (`matches.ipynb`) so that the code can load the data correctly.
+* The notebook will generate various visualizations and outputs based on the data.
+
+That's it! Let me know if you need help with any specific steps.
+
 
