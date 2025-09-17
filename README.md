@@ -36,7 +36,7 @@ Data_Frame = pd.read_csv('matches.csv')  # Load data from 'matches.csv' into a p
 ```
 
 ```python
-# See the first 5 rows of the dataset
+# See the first 3 rows of the dataset
 Data_Frame.head(3)  # Displays the first 3 rows of the DataFrame to preview the data
 ```
 ![]()
