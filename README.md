@@ -39,7 +39,7 @@ Data_Frame = pd.read_csv('matches.csv')  # Load data from 'matches.csv' into a p
 # See the first 3 rows of the dataset
 Data_Frame.head(3)  # Displays the first 3 rows of the DataFrame to preview the data
 ```
-![]()
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/1.png)
 ```python
 
 ```
