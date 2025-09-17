@@ -34,3 +34,42 @@ import numpy as np
 # Load the dataset
 Data_Frame = pd.read_csv('matches.csv')  # Load data from 'matches.csv' into a pandas DataFrame
 ```
+
+```python
+# See the first 5 rows of the dataset
+Data_Frame.head(3)  # Displays the first 3 rows of the DataFrame to preview the data
+```
+![]()
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
+```python
+
+```
