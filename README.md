@@ -2,7 +2,7 @@
 
 This analysis performs an in-depth **Exploratory Data Analysis (EDA)** on the IPL dataset, focusing on various aspects of the Indian Premier League. The goal is to uncover insights related to match outcomes, player performances, team statistics, and trends over the seasons.
 
-Key areas explored include:
+#### Key areas explored include:
 
 * **Data Preprocessing**: The dataset was cleaned and formatted, with conversion of the `date` column to the correct datetime type.
 
@@ -21,3 +21,16 @@ Key areas explored include:
 The insights gained from this EDA help to better understand IPL match dynamics, player and team performances, and how certain factors, like batting order or toss wins, might influence the outcome of games.
 
 
+# Code: 
+```python
+# Add important Library
+import pandas as pd  # Import pandas library for data manipulation
+from matplotlib import pyplot as plt  # Import pyplot for data visualization
+import seaborn as sns  # Import seaborn for advanced statistical data visualization
+import numpy as np
+```
+
+```python
+# Load the dataset
+Data_Frame = pd.read_csv('matches.csv')  # Load data from 'matches.csv' into a pandas DataFrame
+```
