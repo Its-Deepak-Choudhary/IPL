@@ -175,6 +175,23 @@ plt.show()  # Display the plot
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/12.png)
 
 ```python
+# Filter matches where 'win_by_wickets' is non-zero (indicating a win by batting second)
+batting_second_wins = Data_Frame[Data_Frame['win_by_wickets'] != 0].value_counts()
+```
+```python
+# Extracting the records where a team won bowling First
+plt.figure(figsize=(4, 4))  # Set the figure size
+plt.title('Distribution of Wickets', color='blue', fontsize=15, fontweight='bold')  # Set the title of the plot
+plt.hist(Data_Frame[Data_Frame['win_by_wickets'] != 0]['win_by_wickets'], bins=30, color="#01e297", edgecolor='black')  # Plot histogram for wins by wickets
+plt.xlabel('Wickets', color="#ac0808", fontsize=12, fontweight='bold')  # Label x-axis as 'Wickets'
+plt.ylabel('Number of Matches', color="#ac0808", fontsize=12, fontweight='bold')  # Label y-axis as 'Number of Matches'
+plt.xticks(color="#ac0808", fontweight='bold')  # Set x-axis tick color and font weight
+plt.yticks(color="#055f0a", fontweight='bold')  # Set y-axis tick color and font weight
+plt.show()  # Display the plot
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/13.png)
+
+```python
 # Bar Chart for teams with most wins batting second
 batting_second_win = Data_Frame[Data_Frame['win_by_wickets'] != 0]['winner'].value_counts()  # Count wins for teams batting second
 # Create a figure for the bar chart
@@ -194,7 +211,7 @@ for i, v in enumerate(top_3_batting_second.values):
 # Show the bar plot
 plt.show()
 ```
-![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/13.png)
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/14.png)
 
 ```python
 # Pie Chart for teams with most wins batting second
@@ -218,3 +235,20 @@ plt.title('Teams with most wins Batting Second', color='#850650', fontsize=10, f
 plt.show()
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/15.png)
+
+```python
+# In which city are the matches being held
+Data_Frame['city'].value_counts()
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/16.png)
+
+```python
+# Count the number of matches played in each season
+Data_Frame['season'].value_counts()
+```
+```python
+# Finding out how many times each team has won matches
+win_count = np.sum(Data_Frame['toss_winner']==Data_Frame['winner'])
+win_count
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/17.png)
