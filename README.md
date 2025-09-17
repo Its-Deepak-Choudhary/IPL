@@ -40,36 +40,75 @@ Data_Frame = pd.read_csv('matches.csv')  # Load data from 'matches.csv' into a p
 Data_Frame.head(3)  # Displays the first 3 rows of the DataFrame to preview the data
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/1.png)
+
+```python
+# Displays summary information about the DataFrame, including data types and non-null counts
+Data_Frame.info()  
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/2.png)
+
+```python
+# Convert the datatype of the column 'date' to datetime, handling mixed formats and assuming day-first
+Data_Frame['date'] = pd.to_datetime(Data_Frame['date'], format='mixed', dayfirst=True)  
+Data_Frame.info()  # verify the changes
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/3.png)
+
+```python
+# Looking for the number of rows and columns in this dataset
+Data_Frame.shape
+```
+```python
+# Getting the frequency of most 'Man of the Match' awards 
+Data_Frame['player_of_match'].value_counts()
+```
+```python
+# Getting the top 10 players with most 'Man of the Match' awards 
+Data_Frame['player_of_match'].value_counts()[0:10]
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/4.png)
+
+```python
+# Getting the names of the top 10 players with most 'Man of the Match' awards
+Data_Frame['player_of_match'].value_counts()[0:10].keys()
+```
+```python
+# Describe the dataset
+Data_Frame.describe()
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/5.png)
+
 ```python
 
 ```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/2.png)
+
 ```python
 
 ```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/2.png)
+
 ```python
 
 ```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/2.png)
+
 ```python
 
 ```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/2.png)
+
 ```python
 
 ```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/2.png)
+
 ```python
 
 ```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/2.png)
+
 ```python
 
 ```
-```python
-
-```
-```python
-
-```
-```python
-
-```
-```python
-
-```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/2.png)
