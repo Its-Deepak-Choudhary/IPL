@@ -86,6 +86,7 @@ Data_Frame.head()
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/6.png)
 
+### Bar-Plot
 ```python
 # Getting the Top 5 Players with most 'Man of the Match' awards
 colors=['#0867ac', '#ac0867', '#ac6708', '#67ac08', '#6708ac'] # Custom colors
@@ -121,6 +122,7 @@ Batting_First.head()
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/9.png)
 
+### Histogram-Plot
 ```python
 # Histogram for the 'win_by_runs' column
 plt.figure(figsize=(4, 4))  # Set the size of the plot
@@ -134,6 +136,7 @@ plt.show()  # Display the plot
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/10.png)
 
+### Bar-Plot
 ```python
 # Making Bar-Plot for Teams with most wins after batting First
 # Finding out the number of win records where a team won batting First
@@ -160,6 +163,7 @@ plt.show()  # Display the plot
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/11.png)
 
+### Bar-Plot
 ```python
 top_3_batting_first = Data_Frame['winner'].value_counts()[0:3]  # Get top 3 teams with most wins batting first
 plt.figure(figsize=(4, 4))  # Set the figure size
@@ -174,6 +178,7 @@ plt.show()  # Display the plot
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/12.png)
 
+### Histogram-Plot
 ```python
 # Filter matches where 'win_by_wickets' is non-zero (indicating a win by batting second)
 batting_second_wins = Data_Frame[Data_Frame['win_by_wickets'] != 0].value_counts()
@@ -191,6 +196,7 @@ plt.show()  # Display the plot
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/13.png)
 
+### Bar-Plot
 ```python
 # Bar Chart for teams with most wins batting second
 batting_second_win = Data_Frame[Data_Frame['win_by_wickets'] != 0]['winner'].value_counts()  # Count wins for teams batting second
@@ -213,6 +219,7 @@ plt.show()
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/14.png)
 
+### Pie-Plot
 ```python
 # Pie Chart for teams with most wins batting second
 batting_second_win = Data_Frame[Data_Frame['win_by_wickets'] != 0]['winner'].value_counts()  # Count wins for teams batting second
@@ -252,3 +259,11 @@ win_count = np.sum(Data_Frame['toss_winner']==Data_Frame['winner'])
 win_count
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/17.png)
+
+# Conclusion:
+
+Teams like Mumbai Indians, Kolkata Knight Riders, and Chennai Super Kings are strong contenders both in toss wins and match outcomes.
+Chris Gayle, AB de Villiers, and MS Dhoni have consistently performed well and made a significant impact on match results.
+While most matches are concluded with a winner, the presence of ties and no-results is low.
+The dataset also shows certain missing values, which could be addressed if needed for more granular analysis.
+Overall, there is a wealth of insights available for deeper statistical analysis, like win percentages based on toss decisions, team performance across seasons, and individual player contributions.
