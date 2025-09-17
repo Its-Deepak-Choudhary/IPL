@@ -217,4 +217,4 @@ plt.title('Teams with most wins Batting Second', color='#850650', fontsize=10, f
 # Show the pie chart
 plt.show()
 ```
-![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/14.png)
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/15.png)
