@@ -57,7 +57,6 @@ Hello Friends! I have completed my project on the Indian Premier League (IPL) da
 * **Seasonal Trends:** I observed that some teams had consistent winning streaks across seasons, indicating strong team dynamics or well-established strategies.
 ---
 
-This summary reflects the work that I have done on exploratory data analysis (EDA) for the IPL dataset, including data cleaning, statistical analysis, and visualizations that uncover meaningful insights.
 
 # Code  
 ```python
