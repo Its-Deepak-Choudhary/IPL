@@ -297,6 +297,74 @@ win_count
 ```
 ![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/17.png)
 
+```python
+# Ensure the 'season' column is treated as a categorical variable
+Data_Frame['season'] = Data_Frame['season'].astype(str)
+
+# Plotting the number of matches played per season (Trend of number of matches)
+plt.figure(figsize=(10, 6))
+sns.countplot(data=Data_Frame, x='season', palette='viridis')
+plt.title('Number of Matches Played per Season')
+plt.xlabel('Season')
+plt.ylabel('Number of Matches')
+plt.show()
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/18.png)
+
+```python
+# Plotting the number of wins per season for each team
+plt.figure(figsize=(10, 6))
+sns.countplot(data=Data_Frame, x='season', hue='winner', palette='Set2')
+plt.title('Number of Wins per Season by Team')
+plt.xlabel('Season')
+plt.ylabel('Number of Wins')
+plt.xticks(rotation=45)
+plt.legend(title='Winning Team', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.show()
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/19.png)
+
+```python
+# Plotting the average margin of wins (win_by_runs) per season
+avg_win_by_runs = Data_Frame.groupby('season')['win_by_runs'].mean().reset_index()
+
+plt.figure(figsize=(10, 6))
+sns.lineplot(data=avg_win_by_runs, x='season', y='win_by_runs', marker='o', color='b')
+plt.title('Average Margin of Wins per Season (Win by Runs)')
+plt.xlabel('Season')
+plt.ylabel('Average Win by Runs')
+plt.show()
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/20.png)
+
+```python
+# Plotting the average number of wickets won by per season
+avg_win_by_wickets = Data_Frame.groupby('season')['win_by_wickets'].mean().reset_index()
+
+plt.figure(figsize=(10, 6))
+sns.lineplot(data=avg_win_by_wickets, x='season', y='win_by_wickets', marker='o', color='r')
+plt.title('Average Margin of Wins per Season (Win by Wickets)')
+plt.xlabel('Season')
+plt.ylabel('Average Win by Wickets')
+plt.show()
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/21.png)
+
+```python
+# Pie chart for wins by season for each team
+season_wins = Data_Frame.groupby(['season', 'winner']).size().reset_index(name='win_count')
+
+plt.figure(figsize=(10, 6))
+sns.barplot(data=season_wins, x='season', y='win_count', hue='winner')
+plt.title('Wins per Team for Each Season')
+plt.xlabel('Season')
+plt.ylabel('Number of Wins')
+plt.xticks(rotation=45)
+plt.legend(title='Winning Team', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.show()
+```
+![](https://github.com/Its-Deepak-Choudhary/IPL/blob/master/images/22.png)
+
 # Conclusion:
 
 Teams like Mumbai Indians, Kolkata Knight Riders, and Chennai Super Kings are strong contenders both in toss wins and match outcomes.
