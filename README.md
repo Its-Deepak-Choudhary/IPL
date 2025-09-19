@@ -55,12 +55,10 @@ Hello Friends! I have completed my project on the Indian Premier League (IPL) da
 * **Team Performance:** Teams like **Mumbai Indians**, **Delhi Daredevils**, and **Sunrisers Hyderabad** performed better when batting first, suggesting a strategic advantage for these teams when they set the target.
 
 * **Seasonal Trends:** I observed that some teams had consistent winning streaks across seasons, indicating strong team dynamics or well-established strategies.
-
 ---
 
 This summary reflects the work that I have done on exploratory data analysis (EDA) for the IPL dataset, including data cleaning, statistical analysis, and visualizations that uncover meaningful insights.
 
----
 # Code  
 ```python
 # Add important Library
